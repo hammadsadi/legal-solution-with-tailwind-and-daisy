@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="white">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +18,15 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Tailwind Colors Customize -->
     <script>
       tailwind.config = {
@@ -25,6 +34,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "description-color": "#707070",
+              "color-primary": "#B68C5A",
             },
           },
         },
@@ -38,7 +49,103 @@
   </head>
   <body class="font-popins">
     <!-- Header -->
-    <header>dd</header>
+    <header class="container mx-auto sm:justify-between">
+      <!-- Navbar -->
+      <nav class="">
+        <div class="navbar">
+          <div
+            class="navbar-start w-full md:w-1/2 justify-between lg:justify-start"
+          >
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a class="text-description-color text-base font-normal"
+                    >Home <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-description-color text-base font-normal"
+                    >Services <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-description-color text-base font-normal"
+                    >Cases <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-description-color text-base font-normal"
+                    >Blog <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-description-color text-base font-normal"
+                    >Contact Us <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <a class="text-xl"><img src="images/logo2.png" alt="" /></a>
+          </div>
+
+          <div class="navbar-center lg:items-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="text-description-color text-base font-normal"
+                  >Home <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-description-color text-base font-normal"
+                  >Services <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-description-color text-base font-normal"
+                  >Cases <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-description-color text-base font-normal"
+                  >Blog <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li>
+                <a class="text-description-color text-base font-normal"
+                  >Contact Us <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-end hidden md:flex">
+            <button class="bg-color-primary py-4 px-7 rounded-lg text-white">
+              Free Consultation
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Main -->
     <main></main>
     <!-- Footer -->
